@@ -104,7 +104,7 @@ class IndeedScraper(Scraper):
         query = job_search_query.format(
             what=(f'what: "{search_term}"' if search_term else ""),
             location=(
-                f'location: {{where: "{self.scraper_input.location}", radius: {self.scraper_input.distance}, radiusUnit: MILES}}'
+                f'location: {{where: "{self.scraper_input.location}", radius: {self.scraper_input.distance}, radiusUnit: KILOMETERS}}'
                 if self.scraper_input.location
                 else ""
             ),
